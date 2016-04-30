@@ -4,10 +4,10 @@ import org.gradle.api.DefaultTask
 import org.gradle.api.tasks.TaskAction
 
 class GreetingTask extends DefaultTask {
-    String greeting = 'hello from GreetingTask'
+    String message = 'Starting Generation'
 
     @TaskAction
-    def greet() {
-        println greeting
+    def generate() {
+        println message
     }
 }

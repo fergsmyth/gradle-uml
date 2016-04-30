@@ -11,6 +11,7 @@ buildscript {
 }
 apply plugin: 'org.samples.greeting'
 
-task greeting(type: org.gradle.GreetingTask) {
-    greeting = 'howdy!'
-}
+// Override the message property set in the plugin.
+//generate{
+//    message = 'howdy!'
+//}
