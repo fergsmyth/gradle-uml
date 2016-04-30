@@ -5,8 +5,7 @@ buildscript {
         }
     }
     dependencies {
-        classpath group: 'org.gradle', name: 'customPlugin',
-				  version: '1.0-SNAPSHOT'
+        classpath group: 'org.gradle', name: 'customPlugin', version: '1.0-SNAPSHOT'
     }
 }
 apply plugin: 'org.samples.greeting'

@@ -5,12 +5,12 @@ import org.gradle.testfixtures.ProjectBuilder
 import org.gradle.api.Project
 import static org.junit.Assert.*
 
-class GreetingPluginTest {
+class DiagramPluginTest {
     @Test
     public void greeterPluginAddsGreetingTaskToProject() {
         Project project = ProjectBuilder.builder().build()
         project.pluginManager.apply 'org.samples.greeting'
 
-        assertTrue(project.tasks.generate instanceof GreetingTask)
+        assertTrue(project.tasks.generate instanceof DiagramTask)
     }
 }
