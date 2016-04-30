@@ -5,7 +5,7 @@ buildscript {
         }
     }
     dependencies {
-        classpath group: 'com.ferg', name: 'customPlugin', version: '1.0-SNAPSHOT'
+        classpath group: 'com.ferg', name: 'diagramPlugin', version: '1.0-SNAPSHOT'
     }
 }
 apply plugin: 'com.ferg.diagram'
