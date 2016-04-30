@@ -15,7 +15,7 @@ dependencies {
     testCompile 'junit:junit:4.12'
 }
 
-group = 'org.gradle'
+group = 'com.ferg'
 version = '1.0-SNAPSHOT'
 
 uploadArchives {

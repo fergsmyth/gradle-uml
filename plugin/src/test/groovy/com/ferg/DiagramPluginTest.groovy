@@ -1,4 +1,4 @@
-package org.gradle
+package com.ferg
 
 import org.junit.Test
 import org.gradle.testfixtures.ProjectBuilder
@@ -9,7 +9,7 @@ class DiagramPluginTest {
     @Test
     public void greeterPluginAddsGreetingTaskToProject() {
         Project project = ProjectBuilder.builder().build()
-        project.pluginManager.apply 'org.samples.greeting'
+        project.pluginManager.apply 'com.ferg.diagram'
 
         assertTrue(project.tasks.generate instanceof DiagramTask)
     }

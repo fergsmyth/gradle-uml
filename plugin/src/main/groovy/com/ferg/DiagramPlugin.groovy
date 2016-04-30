@@ -1,4 +1,4 @@
-package org.gradle
+package com.ferg
 
 import org.gradle.api.Project
 import org.gradle.api.Plugin

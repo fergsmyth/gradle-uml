@@ -1,4 +1,4 @@
-package org.gradle
+package com.ferg
 
 import org.gradle.api.DefaultTask
 import org.gradle.api.tasks.TaskAction

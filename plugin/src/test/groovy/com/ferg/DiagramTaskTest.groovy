@@ -1,4 +1,4 @@
-package org.gradle
+package com.ferg
 
 import org.junit.Test
 import org.gradle.testfixtures.ProjectBuilder
