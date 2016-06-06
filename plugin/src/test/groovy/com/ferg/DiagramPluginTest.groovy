@@ -9,7 +9,7 @@ class DiagramPluginTest {
     @Test
     public void greeterPluginAddsGreetingTaskToProject() {
         Project project = ProjectBuilder.builder().build()
-        project.pluginManager.apply 'com.ferg.diagram'
+        project.pluginManager.apply 'umldiagram'
 
         assertTrue(project.tasks.generate instanceof DiagramTask)
     }

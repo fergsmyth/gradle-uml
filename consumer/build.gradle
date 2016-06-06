@@ -3,14 +3,21 @@ buildscript {
         maven {
             url uri('../repo')
         }
+	mavenCentral()
     }
     dependencies {
         classpath group: 'com.ferg', name: 'diagramPlugin', version: '1.0-SNAPSHOT'
     }
 }
-apply plugin: 'com.ferg.diagram'
+apply plugin: 'java'
+apply plugin: 'umldiagram'
+
+println "Test"
+println project.buildscript.configurations.classpath
+println project.buildscript.configurations
+println sourceSets.main.output
 
 // Override the message property set in the plugin.
-//generate{
-//    message = 'howdy!'
-//}
+generate {
+	source = sourceSets.main.output
+}
