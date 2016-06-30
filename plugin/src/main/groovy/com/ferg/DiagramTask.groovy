@@ -4,7 +4,7 @@ import org.gradle.api.DefaultTask
 import org.gradle.api.tasks.TaskAction
 import org.gradle.api.tasks.OutputDirectory
 import org.gradle.api.tasks.InputFiles
-
+import javax.persistence.Entity;
 import org.reflections.Reflections;
 
 class DiagramTask extends DefaultTask {
@@ -15,12 +15,15 @@ class DiagramTask extends DefaultTask {
 
     @TaskAction
     def generate() {
+	print "Run generate task"
 	source.each { File file -> println file.getName()}
-        println targetLocation
-	//Reflections reflections = new Reflections("com.consumer.reflected");
+	Reflections reflections = new Reflections("com.ferg");
 
-        //for (Class<?> clazz : reflections.getTypesAnnotatedWith(Data.class)) {
-            //getLogger().info(clazz.toString());
-        //}
+	print reflections
+        for (Class<?> clazz : reflections.getTypesAnnotatedWith(Entity.class)) {
+	    print "Inside class printout"
+            getLogger().info(clazz.toString());
+	    print clazz
+        }
     }
 }

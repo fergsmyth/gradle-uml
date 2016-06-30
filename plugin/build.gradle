@@ -12,6 +12,7 @@ repositories {
 
 dependencies {
     compile 'org.reflections:reflections:0.9.10'
+    compile group: 'javax.persistence', name: 'persistence-api', version: '1.0'
     testCompile 'junit:junit:4.12'
 }
 
