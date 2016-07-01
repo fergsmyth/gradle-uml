@@ -1,5 +1,8 @@
 # gradle-uml
 
+###### How to run
+
+
 ###### MVP
 
 The gradle uml plugin should be capable of taking a java source location and generate a UML class diagram describing the relationships between objects in the model.

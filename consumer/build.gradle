@@ -12,6 +12,10 @@ buildscript {
 apply plugin: 'java'
 apply plugin: 'umldiagram'
 
+repositories {
+ mavenCentral()
+}
+
 println "Test"
 println project.buildscript.configurations.classpath
 println project.buildscript.configurations
@@ -20,4 +24,8 @@ println sourceSets.main.output
 // Override the message property set in the plugin.
 generate {
 	source = sourceSets.main.output
+}
+
+dependencies {
+ compile group: 'javax.persistence', name: 'persistence-api', version: '1.0'
 }
