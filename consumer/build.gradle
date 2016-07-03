@@ -23,7 +23,7 @@ println sourceSets.main.output
 
 // Override the message property set in the plugin.
 generate {
-	source = sourceSets.main.output
+	source = fileTree(dir: sourceSets.main.output.classesDir);
 }
 
 dependencies {
